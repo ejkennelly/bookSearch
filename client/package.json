@@ -1,14 +1,16 @@
 {
-  "name": "booksearch",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "axios": "^0.18.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "bootstrap": "^4.5.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^3.4.4",
+    "reactstrap": "^8.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +23,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const googleBooksSchema = new Schema({
-  _id: { type: String },
-  title: { type: String },
-  author: { type: String},
-  synopsis: String,
-  image: { type: String },
-  link: { type: String}
+const bookSchema = new Schema({
+  _id: String,
+  title: String,
+  authors: Array,
+  description: String,
+  image: String,
+  link: String
 });
 
-const Book = mongoose.model("Book", googleBooksSchema);
+const Book = mongoose.model("Book", bookSchema);
 
 module.exports = Book;

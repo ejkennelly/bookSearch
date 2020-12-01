@@ -17,8 +17,8 @@ class Search extends React.Component {
         return {
             _id: bookData.id,
             title: bookData.volumeInfo.title,
-            author: bookData.volumeInfo.authors,
-            synopsis: bookData.volumeInfo.description,
+            authors: bookData.volumeInfo.authors,
+            description: bookData.volumeInfo.description,
             image: bookData.volumeInfo.imageLinks.thumbnail,
             link: bookData.volumeInfo.previewLink
         }
@@ -45,7 +45,7 @@ class Search extends React.Component {
         return (
             <div>
                 <Form
-                search={this.state.search}
+                search={this.state.searchBook}
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
                 />
