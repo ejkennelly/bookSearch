@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <NavBar />
+          <Nav />
           <Header />
           <Wrapper>
             <Route exact path="/" component={Search} />
